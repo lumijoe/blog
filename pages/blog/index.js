@@ -9,6 +9,7 @@ export default function Blog() {
             <Hero
                 title="BLOG"
                 subtitle="Blogページ"
+                minititle="minititle"
             />    
         </div>
     )

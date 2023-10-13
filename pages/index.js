@@ -14,6 +14,7 @@ export default function Home() {
     <Hero 
         title="HOME"
         subtitle="テスト開発サイトページ"
+        minititle="minititle"
         imageOn
     />
   )

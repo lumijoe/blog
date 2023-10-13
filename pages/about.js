@@ -9,6 +9,7 @@ export default function About() {
       <Hero
         title="ABOUT"
         subtitle="Aboutページ"
+        minititle="minititle"
       />
     </div>
   )
