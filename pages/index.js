@@ -1,19 +1,20 @@
-// index.js(トップページ)
-
+// pages/index.js(トップページ)
 /*
   (ディレクトリで重要なpublicとpages)
   -public配下(ファイルなどブラウザからURL入力でアクセスできる/--.svgなど)
   -pages 配下(Webページの追加、URL入力でアクセスできる/aboutなど)
 */
+
+// 絶対パス＋エイリアスで指定(管理性重視でjsconfig.jsonを記述)
+import Hero   from "@/components/Hero"
+
 export default function Home() {
   return (
-    <div className="hero">
-      <h1 style={{ color: 'red', fontSize: '80px' }}>CUBE</h1>
-      <hr />
-      <p>アウトプットしていく開発練習用サイト</p>
-    </div>
+      // ヘッダーとフッターをまとめたLayoutでHeroを囲むのは_app.jsでimport済み
+      <Hero />
   )
 }
+
 
 /* 1010
   ・CSSはBootstrap？
@@ -21,3 +22,15 @@ export default function Home() {
   ・仕様：sytle={{キャメルケースオブジェクト: ''}}
   ・Figmaデザインデータを参照
 */
+
+/* 1013
+  ・<div>したくない時<>(<fragment>を省略）
+  ・/componentsでheader, hero(main), footerコンポーネント作成
+  ・/pagesでコンポーネントをindex.jsでインポート
+  ・importパスの絶対パス設定+@エイリアス設定（jsconfig.jsをデフォルトから書き換え）
+  ・header,footerを/components/layoutコンポーネントとしてまとめる
+  ・/pages/index.jsのimportをlayout仕様へ書き換え
+  ・Layoutコンポーネントを全ページで適用させるためのカスタムAppの準備pages/_app.js
+  ・カスタムMyAppの中でLayoutコンポーネントを読み込ませる
+  ・/pages/_app.jsでLayoutをimportのため、index.jsのimportは削除しておく
+  */

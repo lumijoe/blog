@@ -1,7 +1,8 @@
+// jsconfig.json(画像やモジュールを絶対パスでimport可、記述時は再起動、importパスを絶対パスへの記述に変更する)
+
 {
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "baseUrl": ".",
+    "paths"  : { "@/components/*": ["components/*"] }
   }
 }
