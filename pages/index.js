@@ -10,8 +10,12 @@ import Hero   from "@/components/Hero"
 
 export default function Home() {
   return (
-      // ヘッダーとフッターをまとめたLayoutでHeroを囲むのは_app.jsでimport済み
-      <Hero />
+    // ヘッダーとフッターをまとめたLayoutでHeroを囲むのは_app.jsでimport済み
+    <Hero 
+        title="HOME"
+        subtitle="テスト開発サイトページ"
+        imageOn
+    />
   )
 }
 
@@ -33,4 +37,10 @@ export default function Home() {
   ・Layoutコンポーネントを全ページで適用させるためのカスタムAppの準備pages/_app.js
   ・カスタムMyAppの中でLayoutコンポーネントを読み込ませる
   ・/pages/_app.jsでLayoutをimportのため、index.jsのimportは削除しておく
-  */
+*/
+
+/* 1014-1016
+  ・
+
+
+*/

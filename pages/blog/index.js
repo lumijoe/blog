@@ -6,14 +6,28 @@ import Link from 'next/link';
 export default function Blog() {
     return (
         <div>
-            <Hero />
-            <p style={{
-                backgroundColor: '#9999CC',
-                color: 'white'
-            }}>This is BLOG page.</p>
-            <Link href='/about'>
-                ABOUTへ
-            </Link>
+            <Hero
+                title="BLOG"
+                subtitle="Blogページ"
+            />    
         </div>
     )
 }
+
+/*
+    <p style={{
+        backgroundColor: '#9999CC',
+        color: 'white'
+    }}>This is BLOG page.</p>
+    <Link href='/about'
+            style={{
+            backgroundColor: '#232323',
+            boxSizing: 'border-box',
+            borderRadius: '9999px',
+            color: 'white',
+            padding: '8px 13px',
+            textDecoration: 'none',
+            }}>
+        ABOUTへ
+    </Link>
+*/
