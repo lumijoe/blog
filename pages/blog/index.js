@@ -19,7 +19,7 @@ export default function Blog() {
                     border: '1px black solid',
                     textDecoration: 'none',
                     borderRadius: '9999px'
-               }}>ABOUTへ</a>
+               }}>ABOUTへジャンプ</a>
         </div>
     )
 }
